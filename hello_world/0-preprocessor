@@ -1,3 +1,2 @@
 #!/bin/bash
-CFILE="$CFILE.c"
-cpp $CFILE c
+gcc -E $CFILE -o c 
