@@ -1,0 +1,6 @@
+#!/bin/bash
+# Set the C file name
+CFILE="example.c"
+
+# Run the C file through the preprocessor and save the output to a file
+cpp $CFILE c
