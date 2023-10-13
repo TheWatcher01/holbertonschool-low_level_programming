@@ -1,10 +1,4 @@
 #include <stdio.h>
-
-/*
- * File: 4-puts.c
- * Auth: Teddy Deberdt
- */
-
 /*
  * main - Prints "Programming is like building a multilingual
  *                puzzle, followed by a new line.
