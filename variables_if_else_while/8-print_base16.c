@@ -9,13 +9,18 @@
 
 int main(void)
 {
-	int digit = 0;
+	char hex;
 
-	while (digit < 64)
+	for (hex = '0'; hex <= '9';hex++)
 	{
-		putchar(digit + '0');
+		putchar(hex);
 	}
 
+	for (hex = 'a'; hex <= 'f'; hex++)
+	{
+	putchar(hex);
+	}
+	
 	putchar('\n');
 
 	return (0);
