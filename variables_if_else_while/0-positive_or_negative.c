@@ -27,5 +27,5 @@ int main(void)
 		printf("%d is negative\n", n);
 	}
 
-	return (sucess);
+	return (0);
 }
