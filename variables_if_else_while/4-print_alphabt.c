@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Prints the alphabet in lowercase, followed by a new line
+ * main - Prints the base 10 starting from 0,followed by a new line
  * Return: value 0 (sucess)
  */
 int main(void)
