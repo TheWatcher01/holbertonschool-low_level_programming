@@ -1,12 +1,10 @@
 #include<stdio.h>
 
 /**
- *
  * main - Prints all numbers of base 16 in lowercase
  *
  * Return: 0 (sucess)
  */
-
 int main(void)
 {
 	char hex;
