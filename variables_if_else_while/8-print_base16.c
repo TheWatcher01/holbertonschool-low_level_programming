@@ -11,7 +11,7 @@ int main(void)
 {
 	char hex;
 
-	for (hex = '0'; hex <= '9';hex++)
+	for (hex = '0'; hex <= '9'; hex++)
 	{
 		putchar(hex);
 	}
@@ -20,7 +20,6 @@ int main(void)
 	{
 	putchar(hex);
 	}
-	
 	putchar('\n');
 
 	return (0);
