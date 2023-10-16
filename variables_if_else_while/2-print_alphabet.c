@@ -5,7 +5,6 @@
  *
  * Return value 0 (sucess)
  */
-
 int main(void)
 {
 	char letter = 'a';
