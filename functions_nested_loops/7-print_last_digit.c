@@ -11,7 +11,7 @@ int print_last_digit(int num)
 	{
 		last_digit *= -1;
 	}
-	printf("%d\n", last_digit);
+	putchar (last_digit + '0');
 	return last_digit;
 
 }
