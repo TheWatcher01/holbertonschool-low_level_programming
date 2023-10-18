@@ -4,7 +4,7 @@
  *
  * Return: Always 0.
  */
-int isalpha(int c);
+int _isalpha (int c);
 int main(void)
 {
     int r;
