@@ -22,10 +22,10 @@ void print_alphabet_x10(void)
 	{
 		while (letter <= 'z')
 		{
-			_putchar(letter);
+			putchar(letter);
 			letter++;
 		}
-		_putchar('\n');
+		putchar('\n');
 		letter = 'a';
 		i++;
 	}
