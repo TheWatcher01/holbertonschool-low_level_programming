@@ -12,13 +12,12 @@ int i = 0;
 while (i < 10)
 	{
         while (letter <= 'z')
-        {
-		_putchar(letter);
-		letter++;
-        }
+        	{
+			_putchar(letter);
+			letter++;
+        	}
 
-        _putchar('\n');
-
-        i++;
+        	_putchar('\n');
+		i++;
 	}
 }
