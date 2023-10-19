@@ -1,9 +1,10 @@
 #include <stdio.h>
 /**
- * void times_table(void) - function that prints the 9 times table
+ * void times_table(void) - Write function that prints the 9 times table
  *
  * Return: empty
  */
+
 void times_table(void)
 {
 	int x, y, reste;
