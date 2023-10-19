@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * times_table(void) - Write function that prints the 9 times table
+ * times_table - Write function that prints the 9 times table
  *
  * Return: empty
  */
