@@ -8,7 +8,7 @@ void time_table(void)
 
 	for (i = 0; i <=9; i++)
 	{
-		_putchar('0');
+		putchar('0');
 
 		for (j = 1; j <= 9; j++)
 		{
@@ -16,20 +16,20 @@ void time_table(void)
 
 			if (reste > 10)
 			{
-				_putchar(44);
-				_putchar(32);
-				_putchar(32);
-				_putchar(reste 0 '0');
+				putchar(44);
+				putchar(32);
+				putchar(32);
+				putchar(reste 0 '0');
 			}
 			else
 			{
-				_putchar(44);
-				_putchar(32);
-				_putchar((reste / 10) + '0');
-				_putchar((reste % 10) + '0');
+				putchar(44);
+				putchar(32);
+				putchar((reste / 10) + '0');
+				putchar((reste % 10) + '0');
 			}
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 
 }
