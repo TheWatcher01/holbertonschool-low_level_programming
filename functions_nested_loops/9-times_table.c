@@ -19,7 +19,7 @@ void time_table(void)
 				putchar(44);
 				putchar(32);
 				putchar(32);
-				putchar(reste 0 '0');
+				putchar(reste + '0');
 			}
 			else
 			{
