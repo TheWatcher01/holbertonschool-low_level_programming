@@ -14,7 +14,7 @@ void times_table(void)
 		{
 			reste = i * j;
 
-			if (reste > 10)
+			if (reste >= 10)
 			{
 				putchar(44);
 				putchar(32);
