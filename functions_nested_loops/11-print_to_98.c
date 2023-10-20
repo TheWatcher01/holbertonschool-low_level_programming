@@ -15,10 +15,11 @@ void print_to_98(int n )
 			printf("%d, ", i);
 		}
 	}
-	printf("98\n")
+	printf("98\n");
 }
 
-int main(void) {
+int main(void) 
+{
   print_to_98(0);
   print_to_98(98);
   print_to_98(111);
