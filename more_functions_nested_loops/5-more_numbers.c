@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* void more_numbers - script prints 10 times the numbers,0 to 14, followed by new line
+* more_numbers - script prints 10 times the numbers,0 to 14 ...
 * Return: void = 0
 */
 void more_numbers(void)
