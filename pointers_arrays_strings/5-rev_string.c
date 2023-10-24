@@ -15,7 +15,7 @@ void rev_string(char *s)
 
 	for (int i = 0; i < len / 2; i++)
 	{
-		chat temp = s[i];
+		char temp = s[i];
 		s[i] = s[len - i - 1];
 		s[len - i - 1] = temp;
 	}
