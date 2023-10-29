@@ -2,13 +2,14 @@
 
 /**
  * leet - Encodes a string to leetspeak.
- * Leetspeak is a type of online jargon that uses numbers and 
+ *
+ * Leetspeak is a type that uses numbers and
  * symbols to replace letters.
- * This function encodes a string to leetspeak by replacing 
+ * This function encodes a string to leetspeak by replacing
  * the following letters with
  * the corresponding numbers and symbols:
  *
- * | Letter | Leetspeak Replacement |
+ * | Letter | Leetspeak Replacement
  * |---|---|
  * | a | 4 |
  * | e | 3 |
