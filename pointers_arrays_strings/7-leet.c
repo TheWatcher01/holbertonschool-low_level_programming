@@ -19,7 +19,7 @@
  *
  * @a: The string to encode.
  *
- * @return: The encoded string.
+ * Return: The encoded string.
  */
 
 char *leet(char *a)
