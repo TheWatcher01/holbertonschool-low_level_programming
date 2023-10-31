@@ -29,8 +29,7 @@ int calc_prime(int n, int prime)
  *
  * @n: The integer to check.
  *
- * Returns:
- *   1 if n is prime, 0 otherwise.
+ * Return: 1 if n is prime, 0 otherwise.
  */
 
 int is_prime_number(int n)
