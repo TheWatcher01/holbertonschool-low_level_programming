@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * _sqrt_recursion - function that returns the natural square root of a number
- * @n: is an integer
- * Return: -1
+ * calculate_sqrt - Calculates the square root of a number recursively.
+ *
+ * @n: The number to calculate the square root of.
+ * @sqr: The current square to check against.
+ *
+ * Returns: The square root of n, or -1 if n does not have a natural square root.
  */
 
 int calculate_sqrt(int n, int sqr)
