@@ -9,8 +9,8 @@
  * passés au programme.
  * argv[0] est le nom du programme, argv[1] est le premier argument, etc.
  *
- * Return: Retourne toujours 0. 
- * En C, un retour de 0 depuis la fonction main indique que le programme 
+ * Return: Retourne toujours 0.
+ * En C, un retour de 0 depuis la fonction main indique que le programme
  * s'est terminé avec succès.
  */
 
