@@ -5,7 +5,7 @@
  * @argc: Le nombre d'arguments passés au programme.
  * Cela inclut le nom du programme lui-même.
  *
- * @argv: Un tableau de chaînes de caractères contenant les arguments 
+ * @argv: Un tableau de chaînes de caractères contenant les arguments
  * passés au programme.
  * argv[0] est le nom du programme, argv[1] est le premier argument, etc.
  *
