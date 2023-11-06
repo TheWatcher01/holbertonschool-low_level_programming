@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _strdup() - Function that returns a pointer to a newly allocated space in 
+ * _strdup() - Function that returns a pointer to a newly allocated space in
  * memory, which contains a copy of the string given as a parameter.
  *
  * @str: Pointer to a new string which is a duplicate of the string str.
@@ -39,5 +39,4 @@ char *_strdup(char *str)
 	new_str[len] = '\0';
 
 	return (new_str);
-
 }

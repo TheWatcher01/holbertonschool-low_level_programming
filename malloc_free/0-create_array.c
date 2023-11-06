@@ -7,7 +7,7 @@
  * @size: The size of the array to be created.
  * @c: The caracter to initialize the array with
  *
- * Return: NULL if size = 0 
+ * Return: NULL if size = 0
  * Return a pointer to the array, or NULL if it fails
  */
 
