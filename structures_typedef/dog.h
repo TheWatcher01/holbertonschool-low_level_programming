@@ -24,19 +24,8 @@ typedef struct dog
 	char *owner;
 } Dog;
 
-/**
- * init_dog - Initialize a variable of type struct dog.
- *
- * @d: A pointer to the struct dog to initialize.
- * @name: A pointer to a character string representing the dog's name.
- * @age: A float representing the dog's age.
- * @owner: A pointer to a character string representing the dog's owner.
- *
- * Description: This function initializes a variable of type struct dog with
- * the given name, age, and owner. The initialized variable will have its
- * members set to the values provided.
- */
 void print_dog(struct dog *d);
 void init_dog(struct dog *d, char *name, float age, char *owner);
+typedef struct dog dog_t;
 
 #endif
