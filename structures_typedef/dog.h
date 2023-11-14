@@ -1,6 +1,7 @@
 #ifndef DOG_H
 #define DOG_H
 #include <stddef.h>
+#include <stdio.h>
 /**
  * struct dog - Define a new type struct dog representing a dog.
  *
@@ -35,7 +36,7 @@ typedef struct dog
  * the given name, age, and owner. The initialized variable will have its
  * members set to the values provided.
  */
-
+void print_dog(struct dog *d);
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
