@@ -5,6 +5,8 @@
  *
  * @d: A pointer to a struct dog.
  *
+ * Return: void
+ *
  * Description: If d is NULL, the function does nothing. If an element of d is
  * NULL, the function prints (nil) instead of this element. Otherwise, the
  * function prints the name, age, and owner of the dog in the format:
