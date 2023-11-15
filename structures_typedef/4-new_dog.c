@@ -3,9 +3,9 @@
 /**
  * dog_t *new_dog - Function that creates a new dog.
  *
- * @*name: Pointer to string characters (name)
+ * @name: Pointer to string characters (name)
  * @age: Float number (age)
- * @*owner: Pointer to string characters (owner)
+ * @owner: Pointer to string characters (owner)
  *
  * Return: NULL if the function fails.
  */
