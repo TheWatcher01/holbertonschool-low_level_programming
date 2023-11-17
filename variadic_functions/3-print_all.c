@@ -44,12 +44,9 @@ void print_all(const char * const format, ...)
 				s_value = va_arg(args, const char *);
 				if (!s_value)
 				{
-					printf("%s(nil)", separator);
+					s_value = "(nil)";
 				}
-				else
-				{
-					printf("%s%s", separator, s_value);
-				}
+				printf("%s%s", separator, s_value);
 				separator = ", ";
 				break;
 			default:
