@@ -1,9 +1,10 @@
 #include "variadic_functions.h"
 
 /**
- * print_all - function that prints anything.
+ * print_all - Function prints various data types based on a provided
+ * format string.
  *
- * @list: va_list to print form
+ * @format: The format string specifying the types of arguments to print.
  *
  * Return: void
  */
@@ -16,6 +17,7 @@ void print_all(const char * const format, ...)
 	int i_value;
 	float f_value;
 	const char *s_value;
+	char *separator = "";
 
 	va_start(args, format);
 
@@ -25,26 +27,30 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				c = va_arg(args, int);
-				printf("%c,", c);
+				printf("%s%c", separator, c);
+				separator = ", ";
 				break;
 			case 'i':
 				i_value = va_arg(args, int);
-				printf("%d,", i_value);
+				printf("%s%d", separator, i_value);
+				separator = ", ";
 				break;
 			case 'f':
 				f_value = va_arg(args, double);
-				printf("%f,", f_value);
+				printf("%s%f", separator, f_value);
+				separator = ", ";
 				break;
 			case 's':
 				s_value = va_arg(args, const char *);
 				if (!s_value)
 				{
-					printf("(nil)");
+					printf("%s(nil)", separator);
 				}
 				else
 				{
-					printf("%s", s_value);
+					printf("%s%s", separator, s_value);
 				}
+				separator = ", ";
 				break;
 			default:
 				break;
