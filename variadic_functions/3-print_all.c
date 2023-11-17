@@ -25,15 +25,15 @@ void print_all(const char * const format, ...)
 		{
 			case 'c':
 				c = va_arg(args, int);
-				printf("%c%c", c, ',');
+				printf("%c,", c);
 				break;
 			case 'i':
 				i_value = va_arg(args, int);
-				printf("%d%c", i_value, ',');
+				printf("%d,", i_value);
 				break;
 			case 'f':
 				f_value = va_arg(args, double);
-				printf("%f%c", f_value, ',');
+				printf("%f,", f_value);
 				break;
 			case 's':
 				s_value = va_arg(args, const char *);
@@ -43,7 +43,7 @@ void print_all(const char * const format, ...)
 				}
 				else
 				{
-					printf("%s%c", s_value, '\n');
+					printf("%s", s_value);
 				}
 				break;
 			default:
@@ -52,4 +52,5 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 	va_end(args);
+	printf("\n");
 }
