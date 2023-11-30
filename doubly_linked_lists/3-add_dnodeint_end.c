@@ -1,9 +1,13 @@
 #include "lists.h"
 
 /**
- * add_dnodeint - Function adds new node at beginning of dlistint_t list
+ * add_dnodeint_end - Function adds new node at the end of dlistint_t list
  * @head: Double pointers to the head of the dlistint_t list.
- * @n: Node counter
+ * @n: The value to be added to the new node.
+ *
+ * This function creates a new node with the given value and adds it
+ * at the end of a doubly linked list.
+ *
  * Return: The address of the new element, or NULL if it failed.
  */
 
