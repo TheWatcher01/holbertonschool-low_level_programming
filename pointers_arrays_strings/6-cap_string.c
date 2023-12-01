@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * cap_string - Capitalizes all words of a string 
- * This function capitalizes all words of a string. 
- * 
- * @a: The string to capitalize. 
- * 
- * @return: The capitalized string.
+ * cap_string - Capitalizes all words of a string
+ * This function capitalizes all words of a string.
+ *
+ * @a: The string to capitalize.
+ *
+ * Return: The capitalized string.
  */
 char *cap_string(char *a)
 {
@@ -21,18 +21,18 @@ char *cap_string(char *a)
 	while (a[len] != '\0')
 	{
 		if (a[len] == ' ' ||
-		a[len] == '.' ||
-		a[len] == '\t' ||
-		a[len] == '\n' ||
-		a[len] == ',' ||
-		a[len] == ';' ||
-		a[len] == '!' ||
-		a[len] == '?' ||
-		a[len] == '"' ||
-		a[len] == '(' ||
-		a[len] == ')' ||
-		a[len] == '{' ||
-		a[len] == '}')
+				a[len] == '.' ||
+				a[len] == '\t' ||
+				a[len] == '\n' ||
+				a[len] == ',' ||
+				a[len] == ';' ||
+				a[len] == '!' ||
+				a[len] == '?' ||
+				a[len] == '"' ||
+				a[len] == '(' ||
+				a[len] == ')' ||
+				a[len] == '{' ||
+				a[len] == '}')
 		{
 			if (a[len + 1] >= 'a' && a[len + 1] <= 'z')
 			{
