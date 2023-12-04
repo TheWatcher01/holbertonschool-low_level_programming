@@ -1,39 +1,56 @@
 #include "main.h"
-
 /**
- * read_textfile - Reads text file and prints it to POSIX standard output
+ * read_textfile - Reads a text file and prints it to the POSIX standard output
  * @filename: Name of the file to read
- * @letters: Number of letters to read and print
- * Return: Actual number of letters read and printed, or 0 if error
+ * @letters: Number of letters it should attempt to read and print
+ *
+ * This function opens the file named by the string 'filename', reads 'letters'
+ * number of characters from it, and writes those characters to the standard
+ * output. It uses the POSIX system calls open, read, write, and close, and
+ * dynamically allocates a buffer to hold the data.
+ *
+ * Return: The actual number of letters it could read and print, which can be
+ * less than 'letters' if the file is shorter than 'letters' characters, or if
+ * it encounters an error. If the function fails at any point, it returns 0.
  */
-
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *f;
-	int c;
-	size_t count = 0;
+	int fd;
+	char *buffer;
+	ssize_t n_read, n_written;
 
 	if (filename == NULL)
+		return (0);
+
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+		return (0);
+
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 	{
+		close(fd);
 		return (0);
 	}
 
-	f = fopen(filename, "rt");
-	if (f == NULL)
+	n_read = read(fd, buffer, letters);
+	if (n_read == -1)
 	{
+		free(buffer);
+		close(fd);
 		return (0);
 	}
 
-	while ((c = fgetc(f)) != EOF && count < letters)
+	n_written = write(STDOUT_FILENO, buffer, n_read);
+	if (n_written == -1 || n_written != n_read)
 	{
-		if (write(1, &c, 1) != 1)
-		{
-			fclose(f);
-			return (0);
-		}
-		count++;
+		free(buffer);
+		close(fd);
+		return (0);
 	}
 
-	fclose(f);
-	return (count);
+	free(buffer);
+	close(fd);
+
+	return (n_written);
 }
