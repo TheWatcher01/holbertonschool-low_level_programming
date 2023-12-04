@@ -1,48 +1,39 @@
 #include "main.h"
+
 /**
- * read_textfile - Function reads text file and print to POSIX standard output
- * @filename: Name of the file to read.
- * @letters: Number of letters to read and print.
- * Return: Actual number of letters read and printed, or 0 if an error occurs.
+ * read_textfile - Reads text file and prints it to POSIX standard output
+ * @filename: Name of the file to read
+ * @letters: Number of letters to read and print
+ * Return: Actual number of letters read and printed, or 0 if error
  */
+
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
-	ssize_t read_bytes;
-	ssize_t total_read_bytes = 0;
-	char buffer[1024];
+	FILE *f;
+	int c;
+	size_t count = 0;
 
-	if (!filename) {
-		return 0;
+	if (filename == NULL)
+	{
+		return (0);
 	}
 
-	fd = open(filename, O_RDONLY);
-	if (fd == -1) {
-		return 0;
+	f = fopen(filename, "rt");
+	if (f == NULL)
+	{
+		return (0);
 	}
 
-	while ((read_bytes = read(fd, buffer, sizeof(buffer))) > 0) {
-		if (letters && read_bytes > letters) {
-			read_bytes = letters;
+	while ((c = fgetc(f)) != EOF && count < letters)
+	{
+		if (write(1, &c, 1) != 1)
+		{
+			fclose(f);
+			return (0);
 		}
-
-		if (write(STDOUT_FILENO, buffer, read_bytes) != read_bytes) {
-			close(fd);
-			return 0;
-		}
-
-		total_read_bytes += read_bytes;
-		letters -= read_bytes;
-
-		if (!letters) {
-			break;
-		}
+		count++;
 	}
 
-	if (read_bytes == -1) {
-		close(fd);
-		return 0;
-	}
-
-	close(fd);
-	return total_read_bytes;
+	fclose(f);
+	return (count);
 }
