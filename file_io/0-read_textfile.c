@@ -8,24 +8,39 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *f;
-	char c;
+	int fd;
+	char *buffer;
+	ssize_t n_read, n_written;
 	size_t count = 0;
 
 	if (filename == NULL)
 		return (0);
 
-	f = fopen(filename, "rt");
-	if (f == NULL)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
 
-	while ((c = fgetc(f)) != EOF && count < letters)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 	{
-		if (write(1, &c, 1) != 1)
-			return (0);
-		count++;
+		close(fd);
+		return (0);
 	}
 
-	fclose(f);
+	while ((n_read = read(fd, buffer, letters)) > 0 && count < letters)
+	{
+		n_written = write(STDOUT_FILENO, buffer, n_read);
+		if (n_written == -1 || n_written != n_read)
+		{
+			free(buffer);
+			close(fd);
+			return (0);
+		}
+		count += n_written;
+	}
+
+	free(buffer);
+	close(fd);
+
 	return (count);
 }
