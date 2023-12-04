@@ -5,27 +5,44 @@
  * @letters: Number of letters to read and print.
  * Return: Actual number of letters read and printed, or 0 if an error occurs.
  */
-
-ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *f;
-	char c;
-	size_t count = 0; // changé le type de count en size_t
+	int fd;
+	ssize_t read_bytes;
+	ssize_t total_read_bytes = 0;
+	char buffer[1024];
 
-	if (filename == NULL)
-		return (0);
-
-	f = fopen(filename, "rt");
-	if (f == NULL)
-		return (0);
-
-	while ((c = fgetc(f)) != EOF && count < letters)
-	{
-		if (write(1, &c, 1) != 1)
-			return (0);
-		count++;
+	if (!filename) {
+		return 0;
 	}
 
-	fclose(f);
-	return (count);
+	fd = open(filename, O_RDONLY);
+	if (fd == -1) {
+		return 0;
+	}
+
+	while ((read_bytes = read(fd, buffer, sizeof(buffer))) > 0) {
+		if (letters && read_bytes > letters) {
+			read_bytes = letters;
+		}
+
+		if (write(STDOUT_FILENO, buffer, read_bytes) != read_bytes) {
+			close(fd);
+			return 0;
+		}
+
+		total_read_bytes += read_bytes;
+		letters -= read_bytes;
+
+		if (!letters) {
+			break;
+		}
+	}
+
+	if (read_bytes == -1) {
+		close(fd);
+		return 0;
+	}
+
+	close(fd);
+	return total_read_bytes;
 }

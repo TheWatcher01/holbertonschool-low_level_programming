@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <errno.h>
 
 /*Function Prototypes*/
 int _putchar(char c);
