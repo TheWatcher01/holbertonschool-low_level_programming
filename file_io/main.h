@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <unistd.h>
+
 
 /*Function Prototypes*/
 int _putchar(char c);
