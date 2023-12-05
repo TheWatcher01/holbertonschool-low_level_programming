@@ -2,10 +2,6 @@
 #define MAIN_H
 
 #define BUFFER_SIZE 1024
-#define USAGE_ERROR 97
-#define READ_ERROR 98
-#define WRITE_ERROR 99
-#define CLOSE_ERROR 100
 
 #include <stdlib.h>
 #include <stdio.h>
