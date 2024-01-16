@@ -11,7 +11,6 @@
 int linear_search(int *array, size_t size, int value);
 int binary_search(int *array, size_t size, int value);
 
-
 /*_______________________Typedef Struct Prototypes_______________________*/
 
 
@@ -25,5 +24,7 @@ int binary_search(int *array, size_t size, int value);
 
 
 /*____________________Functions Prototypes Advanced Task____________________*/
+
+int jump_search(int *array, size_t size, int value);
 
 #endif /* _SEARCH_ALGOS_H_ */
