@@ -152,7 +152,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [1-last_digit.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/1-last_digit.c)
+- File: [1-last_digit.c](./1-last_digit.c)
 
 ### [2. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game](./2-print_alphabet.c)
 
@@ -173,7 +173,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [2-print_alphabet.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/2-print_alphabet.c)
+- File: [2-print_alphabet.c](./2-print_alphabet.c)
 
 ### [3. alphABET](./3-print_alphabets.c)
 
@@ -194,7 +194,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [3-print_alphabets.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/3-print_alphabets.c)
+- File: [3-print_alphabets.c](./3-print_alphabets.c)
 
 ### [4. When I was having that alphabet soup, I never thought that it would pay off](./4-print_alphabet.c)
 
@@ -217,7 +217,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [4-print_alphabet.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/4-print_alphabet.c)
+- File: [4-print_alphabet.c](./4-print_alphabet.c)
 
 ### [5. Numbers](./5-print_numbers.c)
 
@@ -236,7 +236,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [5-print_numbers.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/5-print_numbers.c)
+- File: [5-print_numbers.c](./5-print_numbers.c)
 
 ### [6. Numberz](./6-print_numberz.c)
 
@@ -258,7 +258,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [6-print_numberz.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/6-print_numberz.c)
+- File: [6-print_numberz.c](./6-print_numberz.c)
 
 ### [7. Smile in the mirror](./7-print_tebahpla.c)
 
@@ -279,7 +279,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [7-print_tebahpla.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/7-print_tebahpla.c)
+- File: [7-print_tebahpla.c](./7-print_tebahpla.c)
 
 ### [8. Hexadecimal](./8-print_base16.c)
 
@@ -300,7 +300,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [8-print_base16.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/8-print_base16.c)
+- File: [8-print_base16.c](./8-print_base16.c)
 
 ### [9. Patience, persistence and perspiration make an unbeatable combination for success](./9-print_comb.c)
 
@@ -324,7 +324,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [9-print_comb.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/9-print_comb.c)
+- File: [9-print_comb.c](./9-print_comb.c)
 
 ## Tasks #advanced
 
@@ -353,7 +353,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [100-print_comb3.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/100-print_comb3.c)
+- File: [100-print_comb3.c](./100-print_comb3.c)
 
 ### [11. The success combination in business is: Do what you do better... and: do more of what you do...](./101-print_comb4.c)
 
@@ -380,7 +380,7 @@ xxxxx@ubuntu:~/0x01$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [101-print_comb4.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/101-print_comb4.c)
+- File: [101-print_comb4.c](./101-print_comb4.c)
 
 ### [12. Software is eating the World](./102-print_comb5.c)
 
@@ -407,4 +407,4 @@ xxxxx@ubuntu:~/$ ./102-print_comb5
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
-- File: [102-print_comb5.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/102-print_comb5.c)
+- File: [102-print_comb5.c](./102-print_comb5.c)
