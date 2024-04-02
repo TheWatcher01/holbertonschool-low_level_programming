@@ -1,4 +1,7 @@
-<h1 align="center">C - Variables, if, else, while</h1>
+<p align="left">
+    <img width="150" height="150" src="images/c-logo.png">
+</p>
+<h1 align="left">C - Variables, if, else, while</h1>
 
 # Resources
 
