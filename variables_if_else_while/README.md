@@ -7,7 +7,7 @@
 
 ### Read or watch
 
-- [Everything you need to know to start with C.pdf](https://holbertonintranet.s3.amazonaws.com/uploads/misc/2021/1/42507f7938ddf9b8963bc903bac7d75f88ca8881.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221031%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221031T165449Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=e8f85d91b517815d0589561bfee3e7278f3d127d30964c845830f5a641ae4a69) (You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”.)
+- [Everything you need to know to start with C.pdf](https://drive.google.com/file/d/1X6XJACwRh8m_6d9cxfu5rJDYNatAfe2G/view?usp=sharing) (You do not have to learn everything in there yet, but make sure you read it entirely first and make sure you understand the slides: “comments”, “Data types | Integer types”, “Declaration”, “Characters”, “Arithmetic operators”, “Variables assignments”, “Comparisons”, “Logical operators”, “if, if…else”, “while loops”.)
 - [Keywords and identifiers](https://publications.gbdirect.co.uk//c_book/chapter2/keywords_and_identifiers.html)
 - [integers](https://publications.gbdirect.co.uk//c_book/chapter2/integral_types.html)
 - [Arithmetic Operators in C](https://www.tutorialspoint.com/cprogramming/c_arithmetic_operators.htm)
