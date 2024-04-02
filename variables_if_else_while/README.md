@@ -98,7 +98,7 @@ xxxxx@ubuntu:~/$
 ### Repo
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
-- Directory: [variables_if_else_while](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/variables_if_else_while)
+- Directory: [variables_if_else_while](/variables_if_else_while)
 - File: [0-positive_or_negative.c](./0-positive_or_negative.c)
 
 ### [1. The last digit](./1-last_digit.c)
