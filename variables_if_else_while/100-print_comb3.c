@@ -12,36 +12,25 @@
 int main(void)
 {
 	/* Variables to keep track of the digits */
-	int i, j, k;
+	int i, j;
 
-	/* Initialize the first digit */
-	i = 0;
-
-	/* Loop through all two-digit numbers */
-	while (i < 100)
+	/* Loop through all possible combinations of two digits */
+	for (i = 0; i < 10; i++)
 	{
-		/* Calculate the value of the digits */
-		j = i % 10; /* second digit */
-		k = i / 10; /* first digit */
-
-		/* If the first digit is less than the second, print the combination */
-		if (k < j)
+		for (j = i + 1; j < 10; j++)
 		{
 			/* Print the first digit */
-			putchar(k + '0');
+			putchar(i + '0');
 			/* Print the second digit */
 			putchar(j + '0');
 
-			/* Print a comma and a space after all combinations except the last one */
-			if (i < 89)
+			/* Print comma and space after all combinations except last one */
+			if (!(i == 8 && j == 9))
 			{
-				putchar(44); /* ASCII value for comma */
-				putchar(32); /* ASCII value for space */
+				putchar(','); /* ASCII value for comma */
+				putchar(' '); /* ASCII value for space */
 			}
 		}
-
-		/* Move on to the next number */
-		i++;
 	}
 
 	/* Print a newline character after the last combination */
