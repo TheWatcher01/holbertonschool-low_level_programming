@@ -1,4 +1,3 @@
-
 <p align="left">
     <img width="150" height="150" src="images/c-logo.png">
 </p>
