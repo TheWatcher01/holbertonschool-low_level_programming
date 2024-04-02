@@ -1,5 +1,5 @@
 <p align="left">
-    <img width="150" height="150" src="images/c-logo-png-transparent.png">
+    <img width="150" height="150" src="images/c-logo.png">
 </p>
 
 <h1 align="left">Holberton School - Low Level Programming :</h1>
