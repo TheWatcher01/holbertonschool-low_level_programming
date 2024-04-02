@@ -1,3 +1,2 @@
 #!/bin/bash
-OUTPUT=$(basename $CFILE .c).s
-gcc -S -masm=intel $CFILE -o $OUTPUT
+OUTPUT=$(basename $CFILE .c).s; gcc -S -masm=intel $CFILE -o $OUTPUT
