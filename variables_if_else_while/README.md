@@ -74,7 +74,7 @@ This program will assign a random number to the variable n each time it is execu
     - if the number is less than 0: `is negative`
   - followed by a new line
 
-```c
+```shell
 xxxxx@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative
 xxxxx@ubuntu:~/$ ./0-positive_or_negative
 -520693284 is negative
@@ -99,7 +99,7 @@ xxxxx@ubuntu:~/$
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/variables_if_else_while)
-- File: [0-positive_or_negative.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/0-positive_or_negative.c)
+- File: [0-positive_or_negative.c](./0-positive_or_negative.c)
 
 ### [1. The last digit](./1-last_digit.c)
 
@@ -117,7 +117,7 @@ This program will assign a random number to the variable n each time it is execu
     - if the last digit of `n` is less than 6 and not 0: the string`and is less than 6 and not 0`
   - followed by a new line
 
-```c
+```shell
 xxxxx@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 1-last_digit.c -o 1-last_digit
 xxxxx@ubuntu:~/$ ./1-last_digit
 Last digit of 629438752 is 2 and is less than 6 and not 0
@@ -162,7 +162,7 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
 - All your code should be in the `main`function
 - You can only use `putchar` twice in your code
 
-```c
+```shell
 xxxxx@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 2-print_alphabet.c -o 2-print_alphabet
 xxxxx@ubuntu:~/$ ./2-print_alphabet
 abcdefghijklmnopqrstuvwxyz
@@ -183,7 +183,7 @@ You can only use the `putchar` function (every other function (`printf, puts`, e
 All your code should be in the `main` function
 You can only use `putchar` three times in your code
 
-```c
+```shell
 xxxxx@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 3-print_alphabets.c -o 3-print_alphabets
 xxxxx@ubuntu:~/$ ./3-print_alphabets | cat -e
 abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$
@@ -205,7 +205,7 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
 - All your code should be in the `main` function
 - You can only use `putchar` twice in your code
 
-```c
+```shell
 xxxxx@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabet.c -o 4-print_alphabet
 xxxxx@ubuntu:~/$ ./4-print_alphabet
 abcdfghijklmnoprstuvwxyz
