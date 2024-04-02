@@ -5,7 +5,7 @@
 
 <h1 align="left">C - Hello World</h1>
 
-# Resources
+## Resources
 
 ### Read or watch
 
@@ -27,11 +27,11 @@
 - _`puts`_
 - _`putchar`_
 
-# Learning Objectives
+## Learning Objectives
 
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
-## General
+### General
 
 - Why C programming is awesome
 - Who invented C
@@ -47,8 +47,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - How to find the right header to include in your source code when using a standard library function
 - How does the _`main`_ function influence the return value of the program
 
-# Requirements
+## Requirements
 
+### C Scripts
 
 - Allowed editors: _`vi`_, _`vim`_, _`emacs`_
 - All your files will be compiled on Ubuntu 20.04 LTS using _`gcc`_, using the options _`-Wall -Werror -Wextra -pedantic -std=gnu89`_
@@ -59,7 +60,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - You are not allowed to use _`system`_
 - Your code should use the _`Betty`_ style. It will be checked using [_`betty-style.pl`_](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [_`betty-doc.pl`_](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
 
-## Shell Scripts
+### Shell Scripts
 
 - Allowed editors: _`vi`_, _`vim`_, _`emacs`_
 - All your scripts will be tested on Ubuntu 20.04 LTS
@@ -67,9 +68,9 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 - All your files should end with a new line
 - The first line of all your files should be exactly _`#!/bin/bash`_
 
-# More Info
+## More Info
 
-## Betty linter
+### Betty linter
 
 To run the Betty linter just with command _`betty <filename>`_:
 
@@ -107,9 +108,9 @@ done
 
 You can now type _`betty <filename>`_ to run the Betty linter!
 
-# Tasks
+## Tasks
 
-## [0-Preprocessor](./0-preprocessor)
+### [0-Preprocessor](./0-preprocessor)
 
 Write a script that runs a C file through the preprocessor and save the result into another file.
 
@@ -151,7 +152,7 @@ Repo:
 - Directory: `hello_world`
 - File: [0-preprocessor](./0-preprocessor)
 
-## [1. Compiler](./1-compiler)
+### [1. Compiler](./1-compiler)
 
 Write a script that compiles a C file but does not link.
 
@@ -188,7 +189,7 @@ Repo:
 - Directory: `hello_world`
 - File: [1-compiler](./1-compiler)
 
-## [2. Assembler](./2-assembler)
+### [2. Assembler](./2-assembler)
 
 Write a script that generates the assembly code of a C code and save it in an output file.
 
@@ -244,7 +245,7 @@ Repo:
 - Directory: `hello_world`
 - File: [2-assembler](./2-assembler)
 
-## [3. Name](./3-name)
+### [3. Name](./3-name)
 
 Write a script that compiles a C file and creates an executable named `cisfun`.
 
@@ -277,7 +278,7 @@ Repo:
 - Directory: `hello_world`
 - File: [3. Name](./3-name)
 
-## [4. Hello, puts](./4-puts.c)
+### [4. Hello, puts](./4-puts.c)
 
 Write a C program that prints exactly `"Programming is like building a multilingual puzzle`, followed by a new line.
 
@@ -299,7 +300,7 @@ Repo:
 - Directory: `hello_world`
 - File: [4-puts.c](./4-puts.c)
 
-## [5. Hello, printf](./5-printf.c)
+### [5. Hello, printf](./5-printf.c)
 
 Write a C program that prints exactly `with proper grammar, but the outcome is a piece of art,`, followed by a new line.
 
@@ -323,7 +324,7 @@ Repo:
 - Directory: `hello_world`
 - File: [5-printf.c](./5-printf.c)
 
-## [6. Size is not grandeur, and territory does not make a nation](./6-size.c)
+### [6. Size is not grandeur, and territory does not make a nation](./6-size.c)
 
 Write a C program that prints the size of various types on the computer it is compiled and run on.
 
@@ -358,7 +359,7 @@ Repo:
 - Directory: `hello_world`
 - File: [6-size.c](./6-size.c)
 
-## [8. Intel](./100-intel)
+### [8. Intel](./100-intel)
 
 Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
 
@@ -413,7 +414,7 @@ Repo:
 - Directory: `hello_world`
 - File: [100-intel](./100-intel)
 
-## [9. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](./101-quote.c)
+### [9. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](./101-quote.c)
 
 Write a C program that prints exactly `and that piece of art is useful" - Dora Korpar, 2015-10-19`, followed by a new line, to the standard error.
 
