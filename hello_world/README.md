@@ -148,7 +148,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [0-preprocessor](./0-preprocessor)
 
 ### [1. Compiler](./1-compiler)
@@ -185,7 +185,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat -v 
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [1-compiler](./1-compiler)
 
 ### [2. Assembler](./2-assembler)
@@ -241,7 +241,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [2-assembler](./2-assembler)
 
 ### [3. Name](./3-name)
@@ -274,7 +274,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [3. Name](./3-name)
 
 ### [4. Hello, puts](./4-puts.c)
@@ -296,7 +296,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [4-puts.c](./4-puts.c)
 
 ### [5. Hello, printf](./5-printf.c)
@@ -320,7 +320,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [5-printf.c](./5-printf.c)
 
 ### [6. Size is not grandeur, and territory does not make a nation](./6-size.c)
@@ -355,7 +355,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [6-size.c](./6-size.c)
 
 ### [8. Intel](./100-intel)
@@ -410,7 +410,7 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [100-intel](./100-intel)
 
 ### [9. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity](./101-quote.c)
@@ -438,5 +438,5 @@ TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$
 Repo:
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
-- Directory: [hello_world](./hello_world)
+- Directory: [hello_world](/hello_world)
 - File: [101-quote.c](./100-intel)
