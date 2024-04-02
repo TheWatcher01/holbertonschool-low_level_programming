@@ -196,7 +196,7 @@ xxxxx@ubuntu:~/0x01$
 - Directory: [variables_if_else_while](https://github.com/TheWatcher01/holbertonschool-low_level_programming/tree/master/variables_if_else_while)
 - File: [3-print_alphabets.c](https://github.com/TheWatcher01/holbertonschool-low_level_programming/blob/master/variables_if_else_while/3-print_alphabets.c)
 
-### [4. When I was having that alphabet soup, I never thought that it would pay off](./4-print_alphabt.c)
+### [4. When I was having that alphabet soup, I never thought that it would pay off](./4-print_alphabet.c)
 
 Write a program that prints the alphabet in lowercase, followed by a new line.
 
@@ -206,10 +206,10 @@ Write a program that prints the alphabet in lowercase, followed by a new line.
 - You can only use `putchar` twice in your code
 
 ```c
-xxxxx@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabt.c -o 4-print_alphabt
-xxxxx@ubuntu:~/$ ./4-print_alphabt
+xxxxx@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 4-print_alphabet.c -o 4-print_alphabet
+xxxxx@ubuntu:~/$ ./4-print_alphabet
 abcdfghijklmnoprstuvwxyz
-xxxxx@ubuntu:~/$ ./4-print_alphabt | grep [eq]
+xxxxx@ubuntu:~/$ ./4-print_alphabet | grep [eq]
 xxxxx@ubuntu:~/0x01$
 ```
 
