@@ -12,7 +12,7 @@
 int main(void)
 {
 	/* The lower and upper parts of the current and next Fibonacci numbers */
-	unsigned int a1 = 0, a2 = 1, b1 = 0, b2 = 2, next1, next2, count;
+	unsigned long int a1 = 0, a2 = 1, b1 = 0, b2 = 2, next1, next2, count;
 
 	/* Print the first two Fibonacci numbers */
 	printf("1, 2");
@@ -27,11 +27,11 @@ int main(void)
 
 		/* Print the next Fibonacci number */
 		if (next2 > 0)
-			printf(", %u%09u", next2, next1);
+			printf(", %lu%09lu", next2, next1);
 		else
-			printf(", %u", next1);
+			printf(", %lu", next1);
 
-		/* Update current & next Fibonacci numbers for next loop iteration */
+		/* Update the current and next Fibonacci numbers for the next loop iteration */
 		a1 = b1;
 		a2 = b2;
 		b1 = next1;
