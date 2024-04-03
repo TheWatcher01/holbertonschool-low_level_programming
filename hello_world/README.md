@@ -116,8 +116,8 @@ Write a script that runs a C file through the preprocessor and save the result i
 - The C file name will be saved in the variable `$CFILE`
 - The output should be saved in the file `c`
 
-```
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c 
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c 
 #include <stdio.h>
 
 /**
@@ -129,9 +129,9 @@ int main(void)
 {
     return (0);
 }
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./0-preprocessor 
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ tail c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./0-preprocessor 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ tail c
 # 942 "/usr/include/stdio.h" 3 4
 
 # 2 "main.c" 2
@@ -142,12 +142,12 @@ int main(void)
 {
  return (0);
 }
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [0-preprocessor](./0-preprocessor)
 
@@ -159,9 +159,9 @@ Write a script that compiles a C file but does not link.
 - The output file should be named the same as the C file, but with the extension `.o` instead of `.c`.
   - Example: if the C file is `main.c`, the output file should be `main.o`
 
-```
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
 #include <stdio.h>
 
 /**
@@ -173,18 +173,18 @@ int main(void)
 {
     return (0);
 }
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./1-compiler 
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ls
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./1-compiler 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ls
 0-preprocessor  1-compiler   c            main.o
 Makefile               100-intel      main.c  main.s
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat -v main.o | head
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat -v main.o | head
 ^?ELF^B^A^A^@^@^@^@^@^@^@^@^@^A^@>^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^P^B^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@@^@^K^@^H^@UHM-^IM-eM-8^@^@^@^@]M-C^@GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609^@^T^@^@^@^@^@^@^@^AzR^@^Ax^P^A^[^L^G^HM-^P^A^@^@^\^@^@^@^\^@^@^@^@^@^@^@^K^@^@^@^@A^N^PM-^F^BC^M^FF^L^G^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^D^@M-qM-^?^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^E^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^C^@^D^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^R^@^A^@^@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@main.c^@main^@^@^@^@ ^@^@^@^@^@^@^@^B^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@.symtab^@.strtab^@.shstrtab^@.text^@.data^@.bss^@.comment^@.note.GNU-stack^@.rela.eh_frame^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^[^@^@^@^A^@^@^@^F^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@@^@^@^@^@^@^@^@^K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@!^@^@^@^A^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@'^@^@^@^H^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@,^@^@^@^A^@^@^@0^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@K^@^@^@^@^@^@^@5^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@5^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@J^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^@^@^@^@^@^@^@^@8^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^H^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@E^@^@^@^D^@^@^@@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M- ^A^@^@^@^@^@^@^X^@^@^@^@^@^@^@    ^@^@^@^F^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@^Q^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^A^@^@^@^@^@^@T^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^B^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-8^@^@^@^@^@^@^@M-X^@^@^@^@^@^@^@
-^@^@^@^H^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@  ^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^P^A^@^@^@^@^@^@^M^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+^@^@^@^H^@^@^@^H^@^@^@^@^@^@^@^X^@^@^@^@^@^@^@  ^@^@^@^C^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@M-^P^A^@^@^@^@^@^@^M^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^A^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [1-compiler](./1-compiler)
 
@@ -196,9 +196,9 @@ Write a script that generates the assembly code of a C code and save it in an ou
 - The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
   - Example: if the C file is main.c, the output file should be `main.s`
 
-```
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
 #include <stdio.h>
 
 /**
@@ -210,10 +210,10 @@ int main(void)
 {
     return (0);
 }
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./2-assembler
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ls
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./2-assembler
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ls
 0-preprocessor  1-compiler  2-assembler c  main.c  main.s  Makefile
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.s
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.s
     .file   "main.c"
     .text
     .globl  main
@@ -235,12 +235,12 @@ main:
     .size   main, .-main
     .ident  "GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609"
     .section    .note.GNU-stack,"",@progbits
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [2-assembler](./2-assembler)
 
@@ -250,9 +250,9 @@ Write a script that compiles a C file and creates an executable named `cisfun`.
 
 - The C file name will be saved in the variable `$CFILE`
 
-```
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
 #include <stdio.h>
 
 /**
@@ -264,16 +264,16 @@ int main(void)
 {
     return (0);
 }
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./3-name 
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ls
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./3-name 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ls
 0-preprocessor  1-compiler   3-name  cisfun  main.o  Makefile
 100-intel       2-assembler  c       main.c  main.s
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [3. Name](./3-name)
 
@@ -285,17 +285,17 @@ Write a C program that prints exactly `"Programming is like building a multiling
 - You are not allowed to use `printf`
 - Your program should end with the value `0`
 
-```
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 4-puts.c && ./a.out
 "Programming is like building a multilingual puzzle
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
 0
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [4-puts.c](./4-puts.c)
 
@@ -308,18 +308,18 @@ Write a C program that prints exactly `with proper grammar, but the outcome is a
 - Your program should return `0`
 - Your program should compile without warning when using the `-Wall` `gcc` option
 
-```
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./a.out 
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 5-printf.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./a.out 
 with proper grammar, but the outcome is a piece of art,
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
 0
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [5-printf.c](./5-printf.c)
 
@@ -332,29 +332,29 @@ Warnings are allowed
 Your program should return `0`
 You might have to install the package `libc6-dev-i386` on your Linux (Vagrant) to test the `-m32` `gcc` option
 
-```
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc 6-size.c -m32 -o size32 2> /tmp/32
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc 6-size.c -m64 -o size64 2> /tmp/64
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./size32
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc 6-size.c -m32 -o size32 2> /tmp/32
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc 6-size.c -m64 -o size64 2> /tmp/64
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./size32
 Size of a char: 1 byte(s)
 Size of an int: 4 byte(s)
 Size of a long int: 4 byte(s)
 Size of a long long int: 8 byte(s)
 Size of a float: 4 byte(s)
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./size64
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./size64
 Size of a char: 1 byte(s)
 Size of an int: 4 byte(s)
 Size of a long int: 8 byte(s)
 Size of a long long int: 8 byte(s)
 Size of a float: 4 byte(s)
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
 0
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [6-size.c](./6-size.c)
 
@@ -366,9 +366,9 @@ Write a script that generates the assembly code (Intel syntax) of a C code and s
 - The output file should be named the same as the C file, but with the extension `.s` instead of `.c`.
   - Example: if the C file is `main.c`, the output file should be `main.s`
 
-```TheWatcher01:
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ export CFILE=main.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.c
 #include <stdio.h>
 
 /**
@@ -380,8 +380,8 @@ int main(void)
 {
     return (0);
 }
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./100-intel 
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.s
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./100-intel 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat main.s
     .file   "main.c"
     .intel_syntax noprefix
     .text
@@ -404,12 +404,12 @@ main:
     .size   main, .-main
     .ident  "GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609"
     .section    .note.GNU-stack,"",@progbits
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [100-intel](./100-intel)
 
@@ -421,22 +421,22 @@ You are not allowed to use any functions listed in the NAME section of the man (
 Your program should return 1
 Your program should compile without any warnings when using the `-Wall` `gcc` option
 
-```TheWatcher01:
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./quote
+```shell
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./quote
 and that piece of art is useful" - Dora Korpar, 2015-10-19
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ echo $?
 1
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./quote 2> q
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat q
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ ./quote 2> q
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ cat q
 and that piece of art is useful" - Dora Korpar, 2015-10-19
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ grep printf < 101-quote.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ grep put < 101-quote.c
-TheWatcher01@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ grep printf < 101-quote.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ grep put < 101-quote.c
+root@ubuntu:~/holbertonschool-low_level_programming/hello_world$ 
 ```
 
 Repo:
 
-- GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
+- GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
 - Directory: [hello_world](/hello_world)
 - File: [101-quote.c](./100-intel)
