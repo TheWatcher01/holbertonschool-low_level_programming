@@ -53,10 +53,10 @@ Write a program that prints _putchar, followed by a new line.
 * The program should return `0`
 
 ```shell
-root@ubuntu:~/$  gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar
-root@ubuntu:~/$ ./0-putchar
+root@ubuntu:~/functions_nested_loops$  gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 0-putchar.c -o 0-putchar
+root@ubuntu:~/functions_nested_loops$ ./0-putchar
 _putchar
-root@ubuntu:~/$
+root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -73,23 +73,23 @@ Write a function that prints the alphabet, in lowercase, followed by a new line.
 * You can only use _putchar twice in your code
 
 ```shell
-root@ubuntu:~/$ cat 1-main.c
+root@ubuntu:~/functions_nested_loops$ cat 1-main.c
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-  */
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
   int main(void)
   {
-  print_alphabet();
-  return (0);
+      print_alphabet();
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet
-  root@ubuntu:~/$ ./1-alphabet
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 1-main.c 1-alphabet.c -o 1-alphabet
+  root@ubuntu:~/functions_nested_loops$ ./1-alphabet
   abcdefghijklmnopqrstuvwxyz
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -106,21 +106,21 @@ Write a function that prints 10 times the alphabet, in lowercase, followed by a 
 * You can only use `_putchar` twice in your code
 
 ```shell
-root@ubuntu:~/$ cat 2-main.c
+root@ubuntu:~/functions_nested_loops$ cat 2-main.c
 #include "main.h"
 
 /**
 * main - check the code.
 *
 * Return: Always 0.
-  */
+*/
   int main(void)
   {
-  print_alphabet_x10();
-  return (0);
+      print_alphabet_x10();
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10
-  root@ubuntu:~/$ ./2-alphabet_x10
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 2-main.c 2-print_alphabet_x10.c -o 2-alphabet_x10
+  root@ubuntu:~/functions_nested_loops$ ./2-alphabet_x10
   abcdefghijklmnopqrstuvwxyz
   abcdefghijklmnopqrstuvwxyz
   abcdefghijklmnopqrstuvwxyz
@@ -131,7 +131,7 @@ root@ubuntu:~/$ cat 2-main.c
   abcdefghijklmnopqrstuvwxyz
   abcdefghijklmnopqrstuvwxyz
   abcdefghijklmnopqrstuvwxyz
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -152,31 +152,31 @@ FYI: The standard library provides a similar function: `islower.`
 Run `man islower` to learn more.
 
 ```shell
-root@ubuntu:~/$ cat 3-main.c
+root@ubuntu:~/functions_nested_loops$ cat 3-main.c
 #include "main.h"
 
 /**
 * main - check the code.
 *
 * Return: Always 0.
-  */
+*/
   int main(void)
   {
-  int r;
+      int r;
 
-  r = _islower('H');
-  _putchar(r + '0');
-  r = _islower('o');
-  _putchar(r + '0');
-  r = _islower(108);
-  _putchar(r + '0');
-  _putchar('\n');
-  return (0);
+      r = _islower('H');
+      _putchar(r + '0');
+      r = _islower('o');
+      _putchar(r + '0');
+      r = _islower(108);
+      _putchar(r + '0');
+      _putchar('\n');
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-islower.c -o 3-islower
-  root@ubuntu:~/$ ./3-islower
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 3-main.c 3-islower.c -o 3-islower
+  root@ubuntu:~/functions_nested_loops$ ./3-islower
   011
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -197,33 +197,33 @@ FYI: The standard library provides a similar function: `isalpha`.
 Run `man isalpha` to learn more.
 
 ```shell
-root@ubuntu:~/$ cat 4-main.c
+root@ubuntu:~/functions_nested_loops$ cat 4-main.c
 #include "main.h"
 
 /**
 * main - check the code.
 *
 * Return: Always 0.
-  */
+*/
   int main(void)
   {
-  int r;
+      int r;
 
-  r = _isalpha('H');
-  _putchar(r + '0');
-  r = _isalpha('o');
-  _putchar(r + '0');
-  r = _isalpha(108);
-  _putchar(r + '0');
-  r = _isalpha(';');
-  _putchar(r + '0');
-  _putchar('\n');
-  return (0);
+      r = _isalpha('H');
+      _putchar(r + '0');
+      r = _isalpha('o');
+      _putchar(r + '0');
+      r = _isalpha(108);
+      _putchar(r + '0');
+      r = _isalpha(';');
+      _putchar(r + '0');
+      _putchar('\n');
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha
-  root@ubuntu:~/$ ./4-isalpha
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 4-main.c 4-isalpha.c -o 4-isalpha
+  root@ubuntu:~/functions_nested_loops$ ./4-isalpha
   1110
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -242,47 +242,47 @@ Write a function that prints the sign of a number.
 * Returns `-1` and prints `-` if `n` is less than zero
 
 ```shell
-root@ubuntu:~/$ cat 5-main.c
+root@ubuntu:~/functions_nested_loops$ cat 5-main.c
 #include "main.h"
 
 /**
 * main - check the code.
 *
 * Return: Always 0.
-  */
+*/
   int main(void)
   {
-  int r;
+      int r;
 
-  r = print_sign(98);
-  _putchar(',');
-  _putchar(' ');
-  _putchar(r + '0');
-  _putchar('\n');
-  r = print_sign(0);
-  _putchar(',');
-  _putchar(' ');
-  _putchar(r + '0');
-  _putchar('\n');
-  r = print_sign(0xff);
-  _putchar(',');
-  _putchar(' ');
-  _putchar(r + '0');
-  _putchar('\n');
-  r = print_sign(-1);
-  _putchar(',');
-  _putchar(' ');
-  _putchar(r + '0');
-  _putchar('\n');
-  return (0);
+      r = print_sign(98);
+      _putchar(',');
+      _putchar(' ');
+      _putchar(r + '0');
+      _putchar('\n');
+      r = print_sign(0);
+      _putchar(',');
+      _putchar(' ');
+      _putchar(r + '0');
+      _putchar('\n');
+      r = print_sign(0xff);
+      _putchar(',');
+      _putchar(' ');
+      _putchar(r + '0');
+      _putchar('\n');
+      r = print_sign(-1);
+      _putchar(',');
+      _putchar(' ');
+      _putchar(r + '0');
+      _putchar('\n');
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign
-  root@ubuntu:~/$ ./5-sign
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 5-main.c 5-sign.c -o 5-sign
+  root@ubuntu:~/functions_nested_loops$ ./5-sign
   +, 1
   0, 0
   +, 1
   -, /
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -300,36 +300,36 @@ Write a function that computes the absolute value of an integer.
 * Run man `abs` to learn more.
 
 ```shell
-root@ubuntu:~/$ cat 6-main.c
+root@ubuntu:~/functions_nested_loops$ cat 6-main.c
 #include "main.h"
 #include <stdio.h>
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-  */
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
   int main(void)
   {
-  int r;
+      int r;
 
-  r = _abs(-1);
-  printf("%d\n", r);
-  r = _abs(0);
-  printf("%d\n", r);
-  r = _abs(1);
-  printf("%d\n", r);
-  r = _abs(-98);
-  printf("%d\n", r);
-  return (0);
+      r = _abs(-1);
+      printf("%d\n", r);
+      r = _abs(0);
+      printf("%d\n", r);
+      r = _abs(1);
+      printf("%d\n", r);
+      r = _abs(-98);
+      printf("%d\n", r);
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-abs.c -o 6-abs
-  root@ubuntu:~/$ ./6-abs
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 6-main.c 6-abs.c -o 6-abs
+  root@ubuntu:~/functions_nested_loops$ ./6-abs
   1
   0
   1
   98
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -346,29 +346,29 @@ Write a function that prints the last digit of a number.
 * Returns the value of the last digit
 
 ```shell
-root@ubuntu:~/$ cat 7-main.c
+root@ubuntu:~/functions_nested_loops$ cat 7-main.c
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-  */
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
   int main(void)
   {
-  int r;
+      int r;
 
-  print_last_digit(98);
-  print_last_digit(0);
-  r = print_last_digit(-1024);
-  _putchar('0' + r);
-  _putchar('\n');
-  return (0);
+      print_last_digit(98);
+      print_last_digit(0);
+      r = print_last_digit(-1024);
+      _putchar('0' + r);
+      _putchar('\n');
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit
-  root@ubuntu:~/$ ./7-last_digit
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 7-main.c 7-print_last_digit.c -o 7-last_digit
+  root@ubuntu:~/functions_nested_loops$ ./7-last_digit
   8044
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -385,21 +385,21 @@ Write a function that prints every minute of the day of Jack Bauer, starting fro
 * You can listen to this soundtrack while coding :)
 
 ```shell
-root@ubuntu:~/$ cat 8-main.c
+root@ubuntu:~/functions_nested_loops$ cat 8-main.c
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-  */
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
   int main(void)
   {
-  jack_bauer();
-  return (0);
+      jack_bauer();
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-24_hours.c -o 8-24
-  root@ubuntu:~/$ ./8-24 | head
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 8-main.c 8-24_hours.c -o 8-24
+  root@ubuntu:~/functions_nested_loops$ ./8-24 | head
   00:00
   00:01
   00:02
@@ -410,7 +410,7 @@ root@ubuntu:~/$ cat 8-main.c
   00:07
   00:08
   00:09
-  root@ubuntu:~/$ ./8-24 | tail
+  root@ubuntu:~/functions_nested_loops$ ./8-24 | tail
   23:50
   23:51
   23:52
@@ -421,9 +421,9 @@ root@ubuntu:~/$ cat 8-main.c
   23:57
   23:58
   23:59
-  root@ubuntu:~/$ ./8-24 | wc -l
+  root@ubuntu:~/functions_nested_loops$ ./8-24 | wc -l
   1440
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -440,20 +440,20 @@ Write a function that prints the 9 times table, starting with 0.
 * Format: see example
 
 ```shell
-root@ubuntu:~/$ cat 9-main.c
+root@ubuntu:~/functions_nested_loops$ cat 9-main.c
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-  */
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
   int main(void)
   {
-  times_table();
-  return (0);
+      times_table();
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 9-main.c 9-times_table.c -o 9-times_table
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 9-main.c 9-times_table.c -o 9-times_table
   ulien@ubuntu:~/0x02$ ./9-times_table | cat -e
   0,  0,  0,  0,  0,  0,  0,  0,  0,  0$
   0,  1,  2,  3,  4,  5,  6,  7,  8,  9$
@@ -465,7 +465,7 @@ root@ubuntu:~/$ cat 9-main.c
   0,  7, 14, 21, 28, 35, 42, 49, 56, 63$
   0,  8, 16, 24, 32, 40, 48, 56, 64, 72$
   0,  9, 18, 27, 36, 45, 54, 63, 72, 81$
-  root@ubuntu:~/$ ./9-times_table | tr ' ' . | cat -e
+  root@ubuntu:~/functions_nested_loops$ ./9-times_table | tr ' ' . | cat -e
   0,..0,..0,..0,..0,..0,..0,..0,..0,..0$
   0,..1,..2,..3,..4,..5,..6,..7,..8,..9$
   0,..2,..4,..6,..8,.10,.12,.14,.16,.18$
@@ -476,7 +476,7 @@ root@ubuntu:~/$ cat 9-main.c
   0,..7,.14,.21,.28,.35,.42,.49,.56,.63$
   0,..8,.16,.24,.32,.40,.48,.56,.64,.72$
   0,..9,.18,.27,.36,.45,.54,.63,.72,.81$
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -492,27 +492,27 @@ Write a function that adds two integers and returns the result.
 * Prototype: `int add(int, int);`
 
 ```shell
-root@ubuntu:~/$ cat 10-main.c
+root@ubuntu:~/functions_nested_loops$ cat 10-main.c
 #include "main.h"
 #include <stdio.h>
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-  */
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
   int main(void)
   {
-  int n;
+      int n;
 
-  n = add(89, 9);
-  printf("%d\n", n);
-  return (0);
+      n = add(89, 9);
+      printf("%d\n", n);
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 10-main.c 10-add.c -o 10-add
-  root@ubuntu:~/$ ./10-add
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 10-main.c 10-add.c -o 10-add
+  root@ubuntu:~/functions_nested_loops$ ./10-add
   98
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -533,31 +533,31 @@ Write a function that prints all natural numbers from n to 98, followed by a new
 * You are allowed to use the standard library
 
 ```shell
-root@ubuntu:~/$ cat 11-main.c
+root@ubuntu:~/functions_nested_loops$ cat 11-main.c
 #include "main.h"
 
 /**
-* main - check the code
-*
-* Return: Always 0.
-  */
+ * main - check the code.
+ *
+ * Return: Always 0.
+ */
   int main(void)
   {
-  print_to_98(0);
-  print_to_98(98);
-  print_to_98(111);
-  print_to_98(81);
-  print_to_98(-10);
-  return (0);
+      print_to_98(0);
+      print_to_98(98);
+      print_to_98(111);
+      print_to_98(81);
+      print_to_98(-10);
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 11-main.c 11-print_to_98.c -o 11-98
-  root@ubuntu:~/$ ./11-98
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 11-main.c 11-print_to_98.c -o 11-98
+  root@ubuntu:~/functions_nested_loops$ ./11-98
   0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
   98
   111, 110, 109, 108, 107, 106, 105, 104, 103, 102, 101, 100, 99, 98
   81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
   -10, -9, -8, -7, -6, -5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98
-  root@ubuntu:~/$
+  root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :
@@ -577,27 +577,27 @@ Write a function that prints the n times table, starting with 0.
 * Format: see example
 
 ```shell
-root@ubuntu:~/$ cat 100-main.c
+root@ubuntu:~/functions_nested_loops$ cat 100-main.c
 #include "main.h"
 
 /**
 * main - check the code.
 *
 * Return: Always 0.
-  */
+*/
   int main(void)
   {
-  print_times_table(3);
-  _putchar('\n');
-  print_times_table(5);
-  _putchar('\n');
-  print_times_table(98);
-  _putchar('\n');
-  print_times_table(12);  
-  return (0);
+      print_times_table(3);
+      _putchar('\n');
+      print_times_table(5);
+      _putchar('\n');
+      print_times_table(98);
+      _putchar('\n');
+      print_times_table(12);  
+      return (0);
   }
-  root@ubuntu:~/$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 100-main.c 100-times_table.c -o 100-times_table
-  root@ubuntu:~/$ ./100-times_table
+  root@ubuntu:~/functions_nested_loops$ gcc -Wall -pedantic -Werror -Wextra -std=gnu89 _putchar.c 100-main.c 100-times_table.c -o 100-times_table
+  root@ubuntu:~/functions_nested_loops$ ./100-times_table
   0,   0,   0,   0
   0,   1,   2,   3
   0,   2,   4,   6
@@ -624,7 +624,7 @@ root@ubuntu:~/$ cat 100-main.c
 0,  10,  20,  30,  40,  50,  60,  70,  80,  90, 100, 110, 120
 0,  11,  22,  33,  44,  55,  66,  77,  88,  99, 110, 121, 132
 0,  12,  24,  36,  48,  60,  72,  84,  96, 108, 120, 132, 144
-root@ubuntu:~/$ ./100-times_table | tr ' ' . | cat -e
+root@ubuntu:~/functions_nested_loops$ ./100-times_table | tr ' ' . | cat -e
 0,...0,...0,...0$
 0,...1,...2,...3$
 0,...2,...4,...6$
@@ -651,7 +651,7 @@ $
 0,..10,..20,..30,..40,..50,..60,..70,..80,..90,.100,.110,.120$
 0,..11,..22,..33,..44,..55,..66,..77,..88,..99,.110,.121,.132$
 0,..12,..24,..36,..48,..60,..72,..84,..96,.108,.120,.132,.144$
-root@ubuntu:~/$
+root@ubuntu:~/functions_nested_loops$
 ```
 
 ### Repo :

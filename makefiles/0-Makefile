@@ -1,2 +1,4 @@
+# Rule 'all' that builds the executable
 all: main.c school.c
-	gcc main.c school.c -o school
+    # Compile main.c and school.c into the executable 'school'
+    gcc main.c school.c -o school

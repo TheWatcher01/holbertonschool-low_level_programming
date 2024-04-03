@@ -1,6 +1,16 @@
+# Compiler to be used
 CC = gcc
+
+# Source files
 SRC = main.c school.c
+
+# Object files
 OBJ = $(SRC:.c=.o)
+
+# Name of the executable
 NAME = school
+
+# Rule 'all' that builds the executable
 all: $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+    # Compile the object files into the executable 'school'
+    $(CC) $(OBJ) -o $(NAME)

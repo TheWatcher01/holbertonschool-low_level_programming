@@ -1,4 +1,10 @@
+# Compiler to be used
 CC = gcc
+
+# Source files
 SRC = main.c school.c
+
+# Rule 'all' that builds the executable
 all: $(SRC)
-	$(CC) $(SRC) -o school
+    # Compile the source files into the executable 'school'
+    $(CC) $(SRC) -o school
