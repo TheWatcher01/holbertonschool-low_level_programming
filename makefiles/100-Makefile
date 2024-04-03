@@ -1,33 +1,18 @@
-# Variables
-CC := gcc
-SRC := main.c school.c
-OBJ := $(SRC:.c=.o)
-NAME := school
-CFLAGS := -Wall -Werror -Wextra -pedantic
-COMPILE := $(CC) $(CFLAGS) -c
+CC = gcc
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+CFLAGS = -Wall -Werror -Wextra -pedantic
 
-# Default rule
-all: $(NAME)
+.PHONY: all clean oclean fclean re
 
-# Linking the executable
-$(NAME): $(OBJ)
-	@$(CC) $(OBJ) -o $(NAME)
-
-# Compiling source files into object files using implicit rules
-%.o: %.c m.h
-	@$(COMPILE) $< -o $@
-
-# Cleaning rules
+all: m.h $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 clean:
-	@find . \( -name "*~" -o -name "\#*\#" -o -name "$(NAME)" \) -delete
-
+	$(RM) *~ $(NAME)
 oclean:
-	@rm -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean oclean
 
-# Forcing recompilation
-re: fclean all
-
-# Prevent make from misinterpreting filenames as make commands
-.PHONY: all clean oclean fclean re
+re: oclean all
