@@ -18,19 +18,22 @@ all: $(NAME)
 
 # Rule that links the object files into the executable
 $(NAME): $(OBJ)
-    @$(CC) $(OBJ) -o $(NAME)
+    gcc $(OBJ) -o $(NAME)
 
 # Rule that compiles source files into object files
-%.o: %.c m.h
-    @$(CC) $(CFLAGS) -c $< -o $@
+main.o: main.c m.h
+    gcc $(CFLAGS) -c main.c -o main.o
+
+school.o: school.c m.h
+    gcc $(CFLAGS) -c school.c -o school.o
 
 # Rule 'clean' that deletes all Emacs and Vim temporary files and the executable
 clean:
-    @rm -f *~ \#*\# $(NAME)
+    rm -f *~ \#*\# $(NAME)
 
 # Rule 'oclean' that deletes the object files
 oclean:
-    @rm -f $(OBJ)
+    rm -f $(OBJ)
 
 # Rule 'fclean' that deletes all Emacs and Vim temporary files, the executable, and the object files
 fclean: clean oclean
