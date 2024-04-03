@@ -1,6 +1,4 @@
-<p align="left">
-    <img width="150" height="150" src="images/c-logo.png">
-</p>
+<p align="left"><img width="150" height="150" src="images/c-logo.png"></p>
 <h1 align="left">C - Variables, if, else, while</h1>
 
 # Resources
@@ -95,7 +93,7 @@ root@ubuntu:~/$ ./0-positive_or_negative
 root@ubuntu:~/$   
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -148,7 +146,7 @@ Last digit of 809065140 is 0 and is 0
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -169,7 +167,7 @@ abcdefghijklmnopqrstuvwxyz
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -190,7 +188,7 @@ abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ$
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -213,7 +211,7 @@ root@ubuntu:~/$ ./4-print_alphabet | grep [eq]
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -232,7 +230,7 @@ root@ubuntu:~/$ ./5-print_numbers
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -254,7 +252,7 @@ root@ubuntu:~/$ ./6-print_numberz
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -275,7 +273,7 @@ zyxwvutsrqponmlkjihgfedcba
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -296,7 +294,7 @@ root@ubuntu:~/$ ./8-print_base16
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -320,7 +318,7 @@ root@ubuntu:~/$ ./9-print_comb | cat -e
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -349,7 +347,7 @@ root@ubuntu:~/$ ./100-print_comb3
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -376,7 +374,7 @@ root@ubuntu:~/$ ./101-print_comb4
 root@ubuntu:~/0x01$
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
@@ -403,7 +401,7 @@ root@ubuntu:~/$ ./102-print_comb5
 00 01, 00 02, 00 03, 00 04, 00 05, 00 06, 00 07, 00 08, 00 09, 00 10, 00 11, [...] 40 91, 40 92, 40 93, 40 94, 40 95, 40 96, 40 97, 40 98, 40 99, 41 42, 41 43, 41 44, 41 45, 41 46, 41 47, 41 48, 41 49, 41 50, 41 51, 41 52, 41 53 [...] 93 95, 93 96, 93 97, 93 98, 93 99, 94 95, 94 96, 94 97, 94 98, 94 99, 95 96, 95 97, 95 98, 95 99, 96 97, 96 98, 96 99, 97 98, 97 99, 98 99
 ```
 
-### Repo
+### Repo :
 
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming/)
 - Directory: [variables_if_else_while](/variables_if_else_while)
