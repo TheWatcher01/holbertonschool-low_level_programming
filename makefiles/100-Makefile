@@ -1,45 +1,33 @@
-# Compiler to be used
-CC = gcc
+# Variables
+CC := gcc
+SRC := main.c school.c
+OBJ := $(SRC:.c=.o)
+NAME := school
+CFLAGS := -Wall -Werror -Wextra -pedantic
+COMPILE := $(CC) $(CFLAGS) -c
 
-# Source files
-SRC = main.c school.c
-
-# Object files
-OBJ = $(SRC:.c=.o)
-
-# Name of the executable
-NAME = school
-
-# Compiler flags
-CFLAGS = -Wall -Werror -Wextra -pedantic
-
-# Rule 'all' that builds the executable
+# Default rule
 all: $(NAME)
 
-# Rule that links the object files into the executable
+# Linking the executable
 $(NAME): $(OBJ)
-    gcc $(OBJ) -o $(NAME)
+	@$(CC) $(OBJ) -o $(NAME)
 
-# Rule that compiles source files into object files
-main.o: main.c m.h
-    gcc $(CFLAGS) -c main.c -o main.o
+# Compiling source files into object files using implicit rules
+%.o: %.c m.h
+	@$(COMPILE) $< -o $@
 
-school.o: school.c m.h
-    gcc $(CFLAGS) -c school.c -o school.o
-
-# Rule 'clean' that deletes all Emacs and Vim temporary files and the executable
+# Cleaning rules
 clean:
-    rm -f *~ \#*\# $(NAME)
+	@find . \( -name "*~" -o -name "\#*\#" -o -name "$(NAME)" \) -delete
 
-# Rule 'oclean' that deletes the object files
 oclean:
-    rm -f $(OBJ)
+	@rm -f $(OBJ)
 
-# Rule 'fclean' that deletes all Emacs and Vim temporary files, the executable, and the object files
 fclean: clean oclean
 
-# Rule 're' that forces recompilation of all source files
+# Forcing recompilation
 re: fclean all
 
-# .PHONY rule to avoid problems with files of the same name as rules
+# Prevent make from misinterpreting filenames as make commands
 .PHONY: all clean oclean fclean re
