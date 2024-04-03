@@ -11,30 +11,35 @@
  */
 int main(void)
 {
-	/* The first two Fibonacci numbers */
-	unsigned long int a = 1, b = 2;
-
-	/* The next Fibonacci number */
-	unsigned long int next;
-
-	/* The counter for the loop */
-	unsigned long int count;
+	/* The lower and upper parts of the current and next Fibonacci numbers */
+	unsigned long int a1 = 0, a2 = 1, b1 = 0, b2 = 2, next1, next2, count;
 
 	/* Print the first two Fibonacci numbers */
-	printf("%lu, %lu", a, b);
+	printf("1, 2");
 
 	/* Calculate and print the next 96 Fibonacci numbers */
 	for (count = 2; count < 98; count++)
 	{
 		/* Calculate the next Fibonacci number */
-		next = a + b;
-
-		/* Update the current two Fibonacci numbers */
-		a = b;
-		b = next;
+		next1 = a1 + b1;
+		next2 = a2 + b2;
+		if (next2 > 1000000000)
+		{
+			next2 -= 1000000000;
+			next1++;
+		}
 
 		/* Print the next Fibonacci number */
-		printf(", %lu", next);
+		if (next1 > 0)
+			printf(", %lu%09lu", next1, next2);
+		else
+			printf(", %lu", next2);
+
+		/* Update current & next Fibonacci numbers for next loop iteration */
+		a1 = b1;
+		a2 = b2;
+		b1 = next1;
+		b2 = next2;
 	}
 
 	/* Print a newline at the end */
