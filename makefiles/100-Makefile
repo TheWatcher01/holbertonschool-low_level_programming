@@ -1,6 +1,9 @@
 # Compiler to be used
 CC = gcc
 
+# Command to compile source files into object files
+COMPILE = $(CC) $(CFLAGS) -c
+
 # Source files
 SRC = main.c school.c
 
@@ -22,7 +25,7 @@ $(NAME): $(OBJ)
 
 # Rule that compiles source files into object files
 %.o: %.c m.h
-    @$(CC) $(CFLAGS) -c $< -o $@
+    @$(COMPILE) $< -o $@
 
 # Rule 'clean' that deletes all Emacs and Vim temporary files and the executable
 clean:
