@@ -1,6 +1,4 @@
-<p align="left">
-    <img width="150" height="150" src="images/c-logo.png">
-</p>
+<p align="left"><img width="150" height="150" src="images/c-logo.png"></p>
 
 <h1 align="left">C - Hello World</h1>
 
