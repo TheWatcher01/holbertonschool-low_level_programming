@@ -85,7 +85,7 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
  * Return: If an error occurs - NULL.
  *         Otherwise - a pointer to the new node.
  */
-shash_node_t *create_new_node(const char *key, const char *value)
+shash_node_t *create_new_node(const char *key, char *value)
 {
 	shash_node_t *new_node = malloc(sizeof(shash_node_t));
 
