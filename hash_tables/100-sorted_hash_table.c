@@ -42,7 +42,7 @@ shash_table_t *shash_table_create(unsigned long int size)
  */
 int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 {
-	shash_node_t *new, *tmp;
+	shash_node_t *new_node, *tmp_node;
 	char *value_copy;
 	unsigned long int index;
 
@@ -54,68 +54,107 @@ int shash_table_set(shash_table_t *ht, const char *key, const char *value)
 		return (0);
 
 	index = key_index((const unsigned char *)key, ht->size);
-	tmp = ht->shead;
-	while (tmp)
+	tmp_node = ht->shead;
+	while (tmp_node)
 	{
-		if (!strcmp(tmp->key, key))
+		if (!strcmp(tmp_node->key, key))
 		{
-			free(tmp->value);
-			tmp->value = value_copy;
+			free(tmp_node->value);
+			tmp_node->value = value_copy;
 			return (1);
 		}
-		tmp = tmp->snext;
+		tmp_node = tmp_node->snext;
 	}
 
-	new = malloc(sizeof(shash_node_t));
-	if (!new)
+	new_node = create_new_node(key, value_copy);
+	if (!new_node)
 	{
 		free(value_copy);
 		return (0);
 	}
-	new->key = strdup(key);
-	if (!new->key)
-	{
-		free(value_copy);
-		free(new);
-		return (0);
-	}
-	new->value = value_copy;
-	new->next = ht->array[index];
-	ht->array[index] = new;
 
-	if (!ht->shead)
-	{
-		new->sprev = NULL;
-		new->snext = NULL;
-		ht->shead = new;
-		ht->stail = new;
-	}
-	else if (strcmp(ht->shead->key, key) > 0)
-	{
-		new->sprev = NULL;
-		new->snext = ht->shead;
-		ht->shead->sprev = new;
-		ht->shead = new;
-	}
-	else
-	{
-		tmp = ht->shead;
-		while (tmp->snext != NULL && strcmp(tmp->snext->key, key) < 0)
-			tmp = tmp->snext;
-		new->sprev = tmp;
-		new->snext = tmp->snext;
-		if (tmp->snext == NULL)
-			ht->stail = new;
-		else
-			tmp->snext->sprev = new;
-		tmp->snext = new;
-	}
+	insert_node(ht, new_node, index);
 
 	return (1);
 }
 
 /**
- * shash_table_get - Function that retrieves the value associated with a key in a sorted hash table.
+ * create_new_node - Function that creates a new node.
+ * @key: The key to add to the new node.
+ * @value: The value to add to the new node.
+ * Return: If an error occurs - NULL.
+ *         Otherwise - a pointer to the new node.
+ */
+shash_node_t *create_new_node(const char *key, const char *value)
+{
+	shash_node_t *new_node = malloc(sizeof(shash_node_t));
+
+	if (!new_node)
+	{
+		free(value);
+		return (NULL);
+	}
+	new_node->key = strdup(key);
+	if (!new_node->key)
+	{
+		free(value);
+		free(new_node);
+		return (NULL);
+	}
+	new_node->value = value;
+	return (new_node);
+}
+
+/**
+ * insert_node - Function that inserts a node into a sorted hash table.
+ * @ht: A pointer to the sorted hash table.
+ * @new_node: The new node to insert.
+ * @index: Index of the array of the sorted hash table to insert into.
+ * Return: Nothing.
+ */
+void insert_node(shash_table_t *ht, shash_node_t *new_node,
+				 unsigned long int index)
+{
+	shash_node_t *tmp_node;
+
+	new_node->next = ht->array[index];
+	ht->array[index] = new_node;
+
+	if (!ht->shead)
+	{
+		new_node->sprev = NULL;
+		new_node->snext = NULL;
+		ht->shead = new_node;
+		ht->stail = new_node;
+	}
+	else if (strcmp(ht->shead->key, new_node->key) > 0)
+	{
+		new_node->sprev = NULL;
+		new_node->snext = ht->shead;
+		ht->shead->sprev = new_node;
+		ht->shead = new_node;
+	}
+	else
+	{
+		tmp_node = ht->shead;
+		while (tmp_node->snext != NULL &&
+			   strcmp(tmp_node->snext->key, new_node->key) < 0)
+			tmp_node = tmp_node->snext;
+
+		new_node->sprev = tmp_node;
+		new_node->snext = tmp_node->snext;
+
+		if (tmp_node->snext == NULL)
+			ht->stail = new_node;
+		else
+			tmp_node->snext->sprev = new_node;
+
+		tmp_node->snext = new_node;
+	}
+}
+
+/**
+ * shash_table_get - Retrieves value associated with key in sorted hash table.
  * @ht: A pointer to the sorted hash table.
  * @key: The key to get the value of.
  * Return: If the key cannot be matched - NULL.
@@ -165,7 +204,7 @@ void shash_table_print(const shash_table_t *ht)
 }
 
 /**
- * shash_table_print_rev - Function that prints a sorted hash table in reverse order.
+ * shash_table_print_rev - That prints sorted hash table in reverse order.
  * @ht: A pointer to the sorted hash table.
  * Return: Nothing.
  */
