@@ -61,7 +61,7 @@ root@ubuntu:~/functions_nested_loops$
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [0-putchar.c](./0-putchar.c)
 
@@ -94,7 +94,7 @@ root@ubuntu:~/functions_nested_loops$ cat 1-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [1-alphabet.c](./1-alphabet.c)
 
@@ -136,7 +136,7 @@ root@ubuntu:~/functions_nested_loops$ cat 2-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [2-print_alphabet_x10.c](./2-print_alphabet_x10.c)
 
@@ -181,7 +181,7 @@ root@ubuntu:~/functions_nested_loops$ cat 3-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [3-islower.c](./3-islower.c)
 
@@ -228,7 +228,7 @@ root@ubuntu:~/functions_nested_loops$ cat 4-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [4-isalpha.c](./4-isalpha.c)
 
@@ -287,7 +287,7 @@ root@ubuntu:~/functions_nested_loops$ cat 5-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [5-sign.c](./5-sign.c)
 
@@ -334,7 +334,7 @@ root@ubuntu:~/functions_nested_loops$ cat 6-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [6-abs.c](./6-abs.c)
 
@@ -373,7 +373,7 @@ root@ubuntu:~/functions_nested_loops$ cat 7-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [7-print_last_digit.c](./7-print_last_digit.c)
 
@@ -428,7 +428,7 @@ root@ubuntu:~/functions_nested_loops$ cat 8-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [8-24_hours.c](./8-24_hours.c)
 
@@ -481,7 +481,7 @@ root@ubuntu:~/functions_nested_loops$ cat 9-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [9-times_table.c](./9-times_table.c)
 
@@ -517,7 +517,7 @@ root@ubuntu:~/functions_nested_loops$ cat 10-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [10-add.c](./10-add.c)
 
@@ -562,7 +562,7 @@ root@ubuntu:~/functions_nested_loops$ cat 11-main.c
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [11-print_to_98.c](./11-print_to_98.c)
 
@@ -656,7 +656,7 @@ root@ubuntu:~/functions_nested_loops$
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [100-times_table.c](./100-times_table.c)
 
@@ -668,7 +668,7 @@ If we list all the natural numbers below 10 that are multiples of 3 or 5, we get
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [101-natural.c](./101-natural.c)
 
@@ -681,7 +681,7 @@ Write a program that prints the first 50 Fibonacci numbers, starting with 1 and 
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [102-fibonacci.c](./102-fibonacci.c)
 
@@ -693,7 +693,7 @@ Each new term in the Fibonacci sequence is generated by adding the previous two 
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [103-fibonacci.c](./103-fibonacci.c)
 
@@ -709,6 +709,6 @@ Write a program that finds and prints the first 98 Fibonacci numbers, starting w
 
 ### Repo :
 
-* GitHub repository: [holbertonschool-low_level_programming](https://github.com/root/holbertonschool-low_level_programming)
+* GitHub repository: [holbertonschool-low_level_programming](https://github.com/TheWatcher01/holbertonschool-low_level_programming)
 * Directory: [functions_nested_loops](/functions_nested_loops)
 * File: [104-fibonacci.c](./104-fibonacci.c)
